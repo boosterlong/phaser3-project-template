@@ -1,10 +1,7 @@
-# Phaser 3 Webpack Project Template
+# Dicey
 
-A Phaser 3 project template with ES6 support via [Babel 7](https://babeljs.io/) and [Webpack 4](https://webpack.js.org/) that includes hot-reloading for development and production-ready builds.
-
-This has been updated for Phaser 3.50.0 version and above.
-
-Loading images via JavaScript module `import` is also supported, although not recommended.
+I took the Phaser 3 project template by photonstorm and turned it into 'Dicey'. It is very similar to the trademarked game known as Yahtzee. :)
+You can play it at https://boosterlong.itch.io/dicey
 
 ## Requirements
 
