@@ -35,7 +35,7 @@ function calculateThreeKind (diceValues) {
 function calculateSmallStraight (diceValues) { 
     const sorted = diceValues.sort()
     const joined = sorted.join('')
-    if ((joined.includes('1234')) || (joined.includes('2345')) || (joined.includes('3456'))) {
+    if ((joined.includes('1234')) || (joined.includes('12234')) || (joined.includes('12334')) || (joined.includes('2345')) || (joined.includes('23345')) || (joined.includes('23445')) || (joined.includes('3456')) || (joined.includes('34456')) || (joined.includes('34556'))) {
         return 30
     }
     else {
@@ -54,7 +54,7 @@ function calculateLargeStraight (diceValues) {
     }
 }
 
-function yahtzee (diceValues) { 
+function dicey (diceValues) { 
     const sorted = diceValues.sort()
     const joined = sorted.join('')
     if ((joined.includes('11111')) || (joined.includes('22222')) || (joined.includes('33333')) || (joined.includes('44444')) || (joined.includes('55555')) || (joined.includes('66666'))) {
@@ -191,9 +191,9 @@ class MyGame extends Phaser.Scene {
             calculator: calculateLargeStraight,
             pos: 500,
         } , {
-            label: 'Yahtzee',
+            label: 'Dicey',
             used: false,
-            calculator: yahtzee,
+            calculator: dicey,
             pos: 540,
         } , {
             label: 'Chance',
